@@ -1,0 +1,155 @@
+body{
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.texto-azul {
+    color: blue;
+}
+
+.navbar {
+    background-color: #333; 
+    color: white;
+}
+/*---------------CARDS-DESTINOS-------------------*/
+.card-body {
+    line-height: 0.80;
+    font-family: sans-serif;  
+}
+
+.container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no haya suficiente espacio horizontal */
+    justify-content: space-around; /* Ajusta el espacio entre las tarjetas */
+}
+
+.card{
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #070707;
+}
+.card .contenido h3{
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:#0f7d8a;
+    border: 1.5px solid #0f7d8a;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #0f7d8a;
+    color:#fff;
+}
+
+.card {
+    margin: 10px; 
+}
+
+.card img {
+    max-width: 100%; 
+}
+
+.card-title {
+    font-size: 24px; 
+}
+
+.card-text h3 {
+    font-weight: bold; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+    color: white; 
+}
+
+/*---------------FOOTER-------------------*/
+.pie-de-pagina{
+    width: 100%;
+    background-color: #0f7d8a;
+    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+.pie-de-pagina .colum{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
+.pie-de-pagina .colum .colum1 figure{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+}
+.pie-de-pagina .colum .colum1 figure img{
+    width: 200px;
+}
+.pie-de-pagina .colum .colum2 h2{
+    line-height: 2.0;
+}
+.pie-de-pagina .colum .colum3{
+    text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.red-social{
+    margin-bottom: 20px;
+    margin-top:35px;
+}
+.red-social a{
+    color: #fff;
+    font-size: 34px;
+    text-decoration: none;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+
+
+/*..............................*/
+/*..........FOOTER...........*/
+footer {
+    background-color: #104c8d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
