@@ -1,0 +1,458 @@
+body{
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.texto-azul {
+    color: blue;
+}
+
+.navbar {
+    background-color: #333; 
+    color: rgb(239, 236, 236);
+}
+
+/* Estilo para el encabezado (header) */
+header {
+    background-color: #79d4dc;
+    color: #fff;
+    text-align: left;
+    padding: 8px 0;
+    margin:0px; /* Corrección en la propiedad margin */
+    width: 500px;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+/* Estilo para los enlaces de navegación (nav-link) */
+a{
+    color: #ffffff; /* Color de texto deseado */
+    text-decoration: none;
+    font-size: 15px; /* Reduzco el tamaño del texto del menú */
+    margin-right: 20px;
+}
+/* Estilos generales para restablecer los márgenes y rellenos predeterminados */
+body, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.barra1{
+    margin-bottom: 90px;
+}
+
+/* Estilos para listas no ordenadas y ordenadas */
+ul, ol {
+    list-style: none;
+}
+
+/*----------------------------------------*/
+/*----------BARRA DE NAVEGACION-----------*/
+
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Hace que los elementos se muestren en una fila horizontal */
+    background-color: #0f7d8a;
+    position: fixed; /* Barra de navegación fija en la parte superior */
+    top: 0; /* Barra de navegación en la parte superior de la página */
+    width: 100%; /* Ancho completo de la página */
+    z-index: 888; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    height: 60px;
+}
+
+.menu-horizontal .nav-link {
+    margin-right: 15px; /* Espacio a la derecha de cada elemento del menú */
+}
+
+.menu-horizontal .nav-link a {
+    font-size: 15px; /* Tamaño de fuente deseado */
+}
+
+.menu-horizontal .nav-link a:hover {
+    font-size: 100%;
+}
+/* Estilos para el menú horizontal */
+.menu-horizontal li a {
+    background-color:#0f7d8a /* Color de fondo deseado */;
+    color:rgb(255, 255, 255) /* Color del texto deseado */;
+    text-decoration: none;
+    padding: 5px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
+    display: block;
+    font-size: 20px;
+}
+
+/* Estilos para el enlace cuando se coloca el cursor encima (hover) */
+.menu-horizontal a:hover {
+    background-color:#1a93a0 /* Color de fondo deseado en hover */;
+}
+
+
+/* Estilos para los elementos de nivel superior del menú horizontal */
+.menu-horizontal > li {
+    float: left;
+}
+
+/* Estilos para ocultar el submenú */
+.menu-horizontal li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+/* Estilos para mostrar el submenú cuando se hace hover en el elemento padre */
+.menu-horizontal li:hover > ul {
+    display: block;
+}
+
+/* Estilo para el encabezado cuando está en versión móvil*/
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reducir el espacio de relleno en dispositivos móviles */
+    }
+    .nav-link {
+        margin: 0 10px; /* Espacio entre enlaces en dispositivos móviles */
+    }
+}
+
+
+/*---------------CARDS-DESTINOS-------------------*/
+.card-body {
+    line-height: 0.80;
+    font-family: sans-serif;
+    max-width: 400px;
+      
+}
+
+.container-card{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no haya suficiente espacio horizontal */
+    justify-content: space-around; /* Ajusta el espacio entre las tarjetas */
+}
+
+.card{
+    width: calc(20.33% - 20px);
+    margin: 0px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #070707;
+}
+.card .contenido h3{
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color:#0f7d8a;
+    border: 1.5px solid #0f7d8a;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: #0f7d8a;
+    color:#fff;
+}
+
+.card {
+    margin: 10px; 
+}
+
+.card img {
+    max-width: 100%; 
+}
+
+.card-title {
+    font-size: 24px; 
+}
+
+.card-text h3 {
+    font-weight: bold; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+    color: white; 
+}
+
+/*---------------FOOTER-------------------*/
+.pie-de-pagina{
+    width: 100%;
+    background-color: #0f7d8a;
+    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+.pie-de-pagina .colum{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
+.pie-de-pagina .colum .colum1 figure{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+}
+.pie-de-pagina .colum .colum1 figure img{
+    width: 200px;
+}
+.pie-de-pagina .colum .colum2 h2{
+    line-height: 2.0;
+}
+.pie-de-pagina .colum .colum3{
+    text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.red-social{
+    margin-bottom: 20px;
+    margin-top:35px;
+}
+.red-social a{
+    color: #fff;
+    font-size: 34px;
+    text-decoration: none;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+
+
+/*..............................*/
+/*..........FOOTER...........*/
+footer {
+    background-color: #104c8d;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+*products styles*/
+.card-products-container {
+    margin: 5vh auto;
+}
+.card-products {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0%;
+}
+.card-products img{
+    margin-top: 40px;
+    width: 400px;
+    height: 300px;
+}
+.card-products button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: #1bcb7f;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+.card-products button:hover {
+    opacity: 0.7;
+}
+/*card button*/
+.cart-btn{
+    position: fixed;
+    top: 90vh;
+    right: 40px;
+    background-color: rgb(25, 25, 25);
+    padding: 10px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    transition: transform 0.2s ease-in-out;
+}
+.cart-btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+.cart-counter {
+    display: none;
+    position: fixed;
+    top: 89vh;
+    right: 27px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ed3434;
+    padding: 4px;
+    border-radius: 50%;
+    height: 17px;
+    width: 17px;
+    font-size: 15px;
+}
+/*modal*/
+.modal-overlay {
+    display:None;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.modal-container{
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6x #00000029;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+    z-index: 1;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+/*este lo agregué yo, si no gusta, eliminar*/
+.modal-close{ /*GENERADO PARA ACOMODAR LA CRUZ DEL CART A LA DERECHA*/
+    float: right;
+    cursor: pointer;
+}
+.modal-title{ /*GENERADO PARA CENTRAR Y AJUSTAR TAMAÑO DEL TITULO 'CART'*/
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*Se añaden los estilos que corresponden al video 2*/
+/*modal body*/
+.modal-body{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.product-img{
+    height: 150px;
+    margin-right: 20px;
+    width: 150px;
+}
+.product-info{
+    flex: 1;
+    text-align: left;
+}
+.product-info h4{
+    margin-top: 35px;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 4em;
+}
+.quantity-btn-decrese, .quantity-btn-increse{
+    color: #333333;
+    cursor: pointer;
+    font-size: 16px;
+    width: 28px;
+    font-weight: bold;
+}
+.quantity-input{
+    color: #333333;
+    font-size: 16px;
+    padding: 10 10px;
+    text-align: center;
+    width: 50px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 500px){ /*media query para responsividad*/
+    .product-img{
+        display: none;
+    }
+    .modal-body{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.delete-product{
+    margin-top: 20px;
+    margin-left: 2em;
+    cursor: pointer;
+}
+.modal-footer{
+    text-align: center;
+}
+.total-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+#button-checkout {
+    z-index: 10;
+}
