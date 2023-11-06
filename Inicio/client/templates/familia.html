@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HelloWorld Travel</title>
-    <link href="../static/style.css" rel="stylesheet" media="">
+    <title>Familia</title>
+    <link href="../static/familia.css" rel="stylesheet" media="">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400&display=swap" rel="stylesheet">
-
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
-
 <body>
-<!-------------------------- BARRA DE NAVEGACION ----------------------------->
-    <div class="body">
+    <!-------------------------- BARRA DE NAVEGACION ----------------------------->
+    <div class="barra1">
         <ul class="menu-horizontal">
             <li><a class="nav-link-inicio"><a aria-current="page" href="#inicio">Inicio</a></li>
             <li><a class="nav-link-nosotros"><a href="#quienes-somos">Nosotros</a></li>
@@ -34,62 +31,20 @@
         </ul>
    
     </div>
-<!-------------------------- INICIO ----------------------------->
-    <div class="parte-inicio" id="inicio">
-        <img class="principal-inicio" src="../media/img-fondo.png" alt="playa">
-        <img class="logo1" src="../media/HellW travel.png" alt="logo"
+
+    <!-- Cart Button -->
+    <div class="cart-btn" id="cart-btn">🛒</div>
+    <!-- Cart Counter -->
+    <span class="cart-counter" id="cart-counter">0</span>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-container" id="modal-container"></div>
+    </nav><div class="card-products-container">
+    <div class="card-products" id="shopContent"></div>
     </div>
-<!-------------------------- NOSOTROS ----------------------------->
-    <div class="body-nos" id="quienes-somos">
-        <div class="nosotros">
-            <div class="nosotros-imagen">
-                <img src="../media/Nos-con-fondo.png" alt="mapa de viaje">
-            </div>
 
-            <div class="nosotros-content">
-                <h2> ¿Quienes somos?</h2>
-                <p>Somos una agencia de viajes especializada en brindar experiencias inolvidables a nuestros clientes. Nuestra pasión por los viajes nos impulsa a crear aventuras excepcionales en todo el mundo.Nuestro equipo de expertos está comprometido con proporcionar un servicio de alta calidad y personalizado. Trabajamos arduamente para que tus vacaciones sean inolvidables y sin preocupaciones.
-                Contáctanos para planificar tu próximo viaje y descubrir lo que el mundo tiene reservado para ti.</p>
-            </div>
-        </div>
-    </div>   
-<!-------------------------- ELECCION CONTENIDO ----------------------------->
-    <div class="boxbody" id="seleccionar-destino">
-        <div class="container-card">
-            <div class="card">
-                <figure>
-                    <img src="../media/amigos.jpg">
-                </figure>
-                <div class="contenido">
-                    <h3>Viaja con Amigos</h3>
-                    <p>Creando recuerdos en cada rincón del mundo</p>
-                    <a href="/amigos">Ver +</a>     
-                </div>
-            </div>
 
-            <div class="card">
-                <figure>
-                    <img src="../media/flia.jpg">
-                </figure>
-                <div class="contenido">
-                    <h3>Viaja en Familia</h3>
-                    <p>Descubriendo el mundo en familia</p>
-                    <a href="/familia">Ver +</a>     
-                </div>
-            </div>
-
-            <div class="card">
-                <figure>
-                    <img src="../media/solo.jpg">
-                </figure>
-                <div class="contenido">
-                    <h3>Viaja Solo</h3>
-                    <p>Tu viaje, tus reglas. Explora el mundo a tu ritmo!</p>
-                    <a href="/solo">Ver +</a>     
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-------------------------- FOOTER ----------------------------->
     <footer class="pie-de-pagina footer1">
@@ -129,9 +84,10 @@
             </div>
         </div>    
     </footer>
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/indexFamilia.js"></script>
+    <script src="js/cart.js"></script>
+    
 </body>
-
-
-
-
-
+</html>
