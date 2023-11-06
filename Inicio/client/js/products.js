@@ -117,6 +117,18 @@ const productosFamilia = [
         quanty: 1 ,
         img: "../media/los_reyunos.jpg",
     },
+    {
+        id: 4,
+        productName: "ggrgrgrg",
+        duration: "2 días",
+        DepartureDate: "9 dic. 2023",
+        departureTime: "07:00",
+        arrivalTime: "07:45",
+        price: 4000,
+        cantidad: "4 personas",
+        quanty: 1 ,
+        img: "../media/los_reyunos.jpg",
+    },
        
 ];
 const productosSolos = [
