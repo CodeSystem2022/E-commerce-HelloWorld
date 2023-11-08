@@ -76,7 +76,7 @@ const productosAmigos = [
         arrivalTime: "14:45",
         price: 60000,
         quanty: 1 ,
-        img: "../mardelplata.jpg",
+        img: "../media/mardelplata.jpg",
     },
         
 ];
