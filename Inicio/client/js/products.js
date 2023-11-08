@@ -54,7 +54,7 @@ const productosAmigos = [
         arrivalTime: "15:00",   
         price: 28000,
         quanty: 1,
-        img: "",
+        img: "../media/bariloche.jpg",
     },
     {
         id: 2,
@@ -65,7 +65,7 @@ const productosAmigos = [
         arrivalTime: "14:00",
         price: 36000,
         quanty: 1,
-        img: "",
+        img: "../media/carlospaz.jpg",
     },
     {
         id: 3,
@@ -76,7 +76,7 @@ const productosAmigos = [
         arrivalTime: "14:45",
         price: 60000,
         quanty: 1 ,
-        img: "",
+        img: "../mardelplata.jpg",
     },
         
 ];
@@ -91,7 +91,7 @@ const productosFamilia = [
         price: 120000,
         cantidad: "5 personas",
         quanty: 1,
-        img: "",
+        img: "../media/Iguazú.jpg",
     },
     {
         id: 2,
@@ -103,7 +103,7 @@ const productosFamilia = [
         price: 200000,
         cantidad: "4 personas",
         quanty: 1,
-        img: "",
+        img: "../media/las-lenas.jpg",
     },
     {
         id: 3,
@@ -115,7 +115,7 @@ const productosFamilia = [
         price: 120000,
         cantidad: "4 personas",
         quanty: 1 ,
-        img: "",
+        img: "../media/glaciar.jpg",
     },
     
 ];
@@ -129,7 +129,7 @@ const productosSolos = [
         arrivalTime: "15:30",   
         price: 90000,
         quanty: 1,
-        img: "",
+        img: "../media/salta.jpg",
     },
     {
         id: 2,
@@ -140,7 +140,7 @@ const productosSolos = [
         arrivalTime: "14:45",
         price: 100000,
         quanty: 1,
-        img: "",
+        img: "../media/chalten.jpg",
     },
     {
         id: 3,
@@ -151,7 +151,7 @@ const productosSolos = [
         arrivalTime: "12:45",
         price: 60000,
         quanty: 1 ,
-        img: "",
+        img: "../media/buenosaires.jpg",
     },
        
 ];
