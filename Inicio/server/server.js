@@ -4,7 +4,7 @@ const cors = require("cors");
 const mercadopago = require("mercadopago");
 const path = require("path");
 
-// REPLACE WITH YOUR ACCESS TOKEN AVAILABLE IN: https://developers.mercadopago.com/panel
+// Token de MP
 mercadopago.configure({
     access_token: "APP_USR-8005534317430798-091718-b982966f21e5ad67337aec6868ccafbb-1483636744",
 });
