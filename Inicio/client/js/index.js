@@ -8,7 +8,6 @@ productos.forEach((product) =>{
     <img src="${product.img}">
     <h3>${product.productName}</h3>
     <div class="card-body">
-            <h2 class="card-title">${product.productName}</h2>
             <p class="card-text"><h3>${product.duration}</h3></p>
             <p class="card-text">Fecha de salida: ${product.DepartureDate}</p>
             <p class="card-text">Horario de salida: ${product.departureTime}</p>

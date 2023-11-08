@@ -13,6 +13,113 @@ body{
     background-color: #333; 
     color: rgb(239, 236, 236);
 }
+
+/* Estilo para el encabezado (header) */
+header {
+    background-color: #79d4dc;
+    color: #fff;
+    text-align: left;
+    padding: 8px 0;
+    margin:0px; /* Corrección en la propiedad margin */
+    width: 500px;
+    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+/* Estilo para los enlaces de navegación (nav-link) */
+a{
+    color: #ffffff; /* Color de texto deseado */
+    text-decoration: none;
+    font-size: 15px; /* Reduzco el tamaño del texto del menú */
+    margin-right: 20px;
+}
+/* Estilos generales para restablecer los márgenes y rellenos predeterminados */
+body, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+.barra1{
+    margin-bottom: 90px;
+}
+
+/* Estilos para listas no ordenadas y ordenadas */
+ul, ol {
+    list-style: none;
+}
+
+/*----------------------------------------*/
+/*----------BARRA DE NAVEGACION-----------*/
+
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Hace que los elementos se muestren en una fila horizontal */
+    background-color: #0f7d8a;
+    position: fixed; /* Barra de navegación fija en la parte superior */
+    top: 0; /* Barra de navegación en la parte superior de la página */
+    width: 100%; /* Ancho completo de la página */
+    z-index: 888; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    height: 60px;
+}
+
+.menu-horizontal .nav-link {
+    margin-right: 15px; /* Espacio a la derecha de cada elemento del menú */
+}
+
+.menu-horizontal .nav-link a {
+    font-size: 15px; /* Tamaño de fuente deseado */
+}
+
+.menu-horizontal .nav-link a:hover {
+    font-size: 100%;
+}
+/* Estilos para el menú horizontal */
+.menu-horizontal li a {
+    background-color:#0f7d8a /* Color de fondo deseado */;
+    color:rgb(255, 255, 255) /* Color del texto deseado */;
+    text-decoration: none;
+    padding: 5px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
+    display: block;
+    font-size: 20px;
+}
+
+/* Estilos para el enlace cuando se coloca el cursor encima (hover) */
+.menu-horizontal a:hover {
+    background-color:#1a93a0 /* Color de fondo deseado en hover */;
+}
+
+
+/* Estilos para los elementos de nivel superior del menú horizontal */
+.menu-horizontal > li {
+    float: left;
+}
+
+/* Estilos para ocultar el submenú */
+.menu-horizontal li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+/* Estilos para mostrar el submenú cuando se hace hover en el elemento padre */
+.menu-horizontal li:hover > ul {
+    display: block;
+}
+
+/* Estilo para el encabezado cuando está en versión móvil*/
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reducir el espacio de relleno en dispositivos móviles */
+    }
+    .nav-link {
+        margin: 0 10px; /* Espacio entre enlaces en dispositivos móviles */
+    }
+}
+
+
 /*---------------CARDS-DESTINOS-------------------*/
 .card-body {
     line-height: 0.80;

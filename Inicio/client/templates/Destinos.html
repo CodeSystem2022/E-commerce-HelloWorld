@@ -17,28 +17,33 @@
 </head>
 <body>
     <!-------------------------Barra de navegación--------------------->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
-        
-      <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="/">Inicio</a>
-              <a class="nav-link" href="#">Nosotros</a>
-              <a class="nav-link active" aria current="page" href="#">Destinos</a>
-            </div>
-          </div>
-        </div>
-      </div> <!-- Cart Button -->
-      <div class="cart-btn" id="cart-btn">🛒</div>
-      <!-- Cart Counter -->
-      <span class="cart-counter" id="cart-counter">0</span>
-  
-      <!-- Modal -->
-      <div class="modal-overlay" id="modal-overlay"></div>
-      <div class="modal-container" id="modal-container"></div>
-      </nav><div class="card-products-container">
-        <div class="card-products" id="shopContent"></div>
+    <div class="barra1">
+        <ul class="menu-horizontal">
+            <li><a class="nav-link-inicio"><a aria-current="page" href="/">Inicio</a></li>
+            <li><a class="nav-link-nosotros"><a href="#quienes-somos">Nosotros</a></li>
+            <li><a class="nav-link-destino"><a href="/destinos">Destinos</a></li>
+            <li><a class="nav-link-destino"><a href="#">¿Cómo viajar?</a>
+                <ul class="menu-vertical">
+                    <li><a href="/familia">Viaja en Familia</a></li>
+                    <li><a href="/amigos">Viaja con Amigos</a></li>
+                    <li><a href="/solo">Viaja Solo</a></li>
+                </ul>
+            <li>
+        </ul>
+    
     </div>
+    
+         <!-- Cart Button -->
+        <div class="cart-btn" id="cart-btn">🛒</div>
+        <!-- Cart Counter -->
+        <span class="cart-counter" id="cart-counter">0</span>
+    
+        <!-- Modal -->
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-container" id="modal-container"></div>
+        </nav><div class="card-products-container">
+        <div class="card-products" id="shopContent"></div>
+        </div>
 <!---------------------- FOOTER ----------------------------->
 <footer class="pie-de-pagina">
   <div class="colum">
