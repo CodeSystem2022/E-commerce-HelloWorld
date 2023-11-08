@@ -50,6 +50,7 @@ ul, ol {
     list-style: none;
     padding: 0;
     display: flex; /* Hace que los elementos se muestren en una fila horizontal */
+    align-items: center;
     background-color: #0f7d8a;
     position: fixed; /* Barra de navegación fija en la parte superior */
     top: 0; /* Barra de navegación en la parte superior de la página */

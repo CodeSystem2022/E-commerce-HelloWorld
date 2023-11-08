@@ -43,6 +43,9 @@ body, ul, ol {
 
 .barra1{
     margin-bottom: 90px;
+    font-family: sans-serif;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
 /* Estilos para listas no ordenadas y ordenadas */
@@ -57,6 +60,7 @@ ul, ol {
     list-style: none;
     padding: 0;
     display: flex; /* Hace que los elementos se muestren en una fila horizontal */
+    align-items: center;
     background-color: #0f7d8a;
     position: fixed; /* Barra de navegación fija en la parte superior */
     top: 0; /* Barra de navegación en la parte superior de la página */
