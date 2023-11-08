@@ -4,7 +4,7 @@ const modalOverlay = document.getElementById("modal-overlay");
 const cartBtn = document.getElementById("cart-btn");
 const cartCounter = document.getElementById("cart-counter");
 
-
+//Se encarga de mostrar el contenido del carrito en un modal
 const displayCart = () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "block";
@@ -31,7 +31,7 @@ const displayCart = () => {
 
     //modal Body
     if(cart.length > 0){
-
+    //Se itera sobre los productos en el carrito (variable cart) y se crea un elemento HTML para cada uno
     cart.forEach((product) => {
         const modalBody = document.createElement("div");
         modalBody.className = "modal-body";
@@ -84,18 +84,18 @@ const displayCart = () => {
     const total = cart.reduce((acc,el) => acc + el.price * el.quanty, 0);
 
 
-
+    //Se muestra un resumen del carrito, con el precio total de todos los productos y un botón "ir al proceso de pago"
     const modalFooter = document.createElement("div");
     modalFooter.className = "modal-footer";
     modalFooter.innerHTML = `
     <div class = "total-price">Total: ${total}</div>
-    <button class = "btn-primary" id="checkout-btn"> go to checkout</button> 
+    <button class = "btn-primary" id="checkout-btn"> Ir al proceso de pago</button> 
     <div id="button-checkout"></div>
     `; // boton que lleva al checkout y dispara el evento de mercadopago
 
     modalContainer.append(modalFooter);
 
-    //mp;
+    //Token de acceso 
     const mercadopago = new MercadoPago("APP_USR-5edee690-9d67-4f22-b564-0bffaa7bf97a", {
         locale: "es-AR",
     }); //inicia una instancia de Mercado Pago
@@ -131,7 +131,7 @@ const displayCart = () => {
     });
     
     function createCheckoutButton(preferenceId) {
-        //Initialize the checkout
+        // Se inicia el checkout
         const bricksBuilder = mercadopago.bricks();
 
         const renderComponent = async (bricksBuilder) => {
@@ -139,7 +139,7 @@ const displayCart = () => {
 
             await bricksBuilder.create(
                 "wallet",
-                "button-checkout", // class/id where the payment button will be displayed
+                "button-checkout", 
                 {
                     initialization: {
                         preferenceId: preferenceId,
@@ -154,17 +154,18 @@ const displayCart = () => {
         };
         window.checkoutButton = renderComponent(bricksBuilder);
     }
-
+// Si el carrito está vacío, se muestra un mensaje que indicándolo
 }else{
     const modalText = document.createElement("h2");
     modalText.className = "modal-body";
-    modalText.innerText = "your cart is empty";
+    modalText.innerText = "El carrito está vacío";
     modalContainer.append(modalText);
 }    
 };
 
 cartBtn.addEventListener("click", displayCart);
 
+//Se encarga de eliminar productos del carrito
 const deleteCartProduct =(id) => {
     const foundId = cart.findIndex((element)=> element.id === id);
     cart.splice(foundId, 1);
@@ -172,6 +173,7 @@ const deleteCartProduct =(id) => {
     displayCartCounter();
 };
 
+// Se encarga de mostrar el contador de productos en el carrito 
 const displayCartCounter = ()=> {
     const cartLenght = cart.reduce((acc, el) => acc + el.quanty, 0);
     if (cartLenght > 0) {
