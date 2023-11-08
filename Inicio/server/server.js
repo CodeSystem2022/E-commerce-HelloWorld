@@ -17,8 +17,23 @@ app.use(express.static(path.join(__dirname, "../client")));
 app.use(cors());
 
 app.get("/", function (req, res) {
+    res.sendFile(path.resolve(__dirname, "../client/templates", "HWTravel.html"));
+});
+
+//Vistas nuevas
+app.get("/destinos", function (req, res) {
     res.sendFile(path.resolve(__dirname, "../client/templates", "Destinos.html"));
 });
+app.get("/familia", function (req, res) {
+    res.sendFile(path.resolve(__dirname, "../client/templates", "familia.html"));
+});
+app.get("/amigos", function (req, res) {
+    res.sendFile(path.resolve(__dirname, "../client/templates", "amigos.html"));
+});
+app.get("/solo", function (req, res) {
+    res.sendFile(path.resolve(__dirname, "../client/templates", "solo.html"));
+});
+
 
 
 app.post("/create_preference", (req, res) => {

@@ -1,7 +1,7 @@
 const shopContent = document.getElementById("shopContent");
 const cart = []; 
 
-productos.forEach((product) =>{
+productosFamilia.forEach((product) =>{
     const content = document.createElement("div");
     content.className = "card";
     content.innerHTML = `
@@ -12,8 +12,8 @@ productos.forEach((product) =>{
             <p class="card-text">Fecha de salida: ${product.DepartureDate}</p>
             <p class="card-text">Horario de salida: ${product.departureTime}</p>
             <p class="card-text">Horario de llegada: ${product.arrivalTime}</p>
-            <p class="card-text">Precio por persona:</p>
-            <p class="card-text"><h3 class="texto-azul">${product.price}</h3></p>
+            <p class="card-text">Precio grupo familiar:</p>
+            <p class="card-text"><h3 class="texto-azul">$ ${product.price}</h3></p>
             <p class="card-text"><small>Valor de la tarifa correspondiente a adultos</small></p>
             <p class="card-text"><small>Niños menores a 4 años no abonan costo de servicio</small></p>
             

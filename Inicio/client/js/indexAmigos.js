@@ -1,7 +1,7 @@
 const shopContent = document.getElementById("shopContent");
 const cart = []; 
 
-productos.forEach((product) =>{
+productosAmigos.forEach((product) =>{
     const content = document.createElement("div");
     content.className = "card";
     content.innerHTML = `

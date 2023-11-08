@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HelloWorld Travel</title>
-    <link href="css/style.css" rel="stylesheet" media="">
+    <link href="../static/style.css" rel="stylesheet" media="">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,15 +19,16 @@
 
 <body>
 <!-------------------------- BARRA DE NAVEGACION ----------------------------->
-    <div class="body">
+    <div class="body ">
         <ul class="menu-horizontal">
-            <li><a class="nav-link-inicio"><a aria-current="page" href="#inicio">Inicio</a></li>
-            <li><a class="nav-link-nosotros"><a href="#quienes-somos">Nosotros</a></li>
-            <li><a class="nav-link-destino"><a href="#seleccionar-destino">Destinos</a>
+            <li><a class="nav-link-inicio" aria-current="page" href="#inicio">Inicio</a></li>
+            <li><a class="nav-link-nosotros" href="#quienes-somos">Nosotros</a></li>
+            <li><a class="nav-link-destino" href="/destinos">Destinos</a></li>
+            <li><a class="nav-link-destino" href="#">¿Cómo viajar?</a>
                 <ul class="menu-vertical">
-                    <li><a href="#seleccionar-destino">Viaja en Familia</a></li>
-                    <li><a href="#seleccionar-destino">Viaja con Amigos</a></li>
-                    <li><a href="#seleccionar-destino">Viaja Solo</a></li>
+                    <li><a href="/familia">Viaja en Familia</a></li>
+                    <li><a href="/amigos">Viaja con Amigos</a></li>
+                    <li><a href="/solo">Viaja Solo</a></li>
                 </ul>
             <li>
         </ul>
@@ -35,14 +36,14 @@
     </div>
 <!-------------------------- INICIO ----------------------------->
     <div class="parte-inicio" id="inicio">
-        <img class="principal-inicio" src="img/img-fondo.png" alt="playa">
-        <img class="logo1" src="img/HellW travel.png" alt="logo"
+        <img class="principal-inicio" src="../media/img-fondo.png" alt="playa">
+        <img class="logo1" src="../media/HellW travel.png" alt="logo"
     </div>
 <!-------------------------- NOSOTROS ----------------------------->
     <div class="body-nos" id="quienes-somos">
         <div class="nosotros">
             <div class="nosotros-imagen">
-                <img src="img/Nos-con-fondo.png" alt="mapa de viaje">
+                <img src="../media/Nos-con-fondo.png" alt="mapa de viaje">
             </div>
 
             <div class="nosotros-content">
@@ -57,47 +58,46 @@
         <div class="container-card">
             <div class="card">
                 <figure>
-                    <img src="img/amigos.jpg">
+                    <img src="../media/amigos.jpg">
                 </figure>
                 <div class="contenido">
                     <h3>Viaja con Amigos</h3>
                     <p>Creando recuerdos en cada rincón del mundo</p>
-                    <a href="redirigir a pantalla dos">Ver +</a>     
+                    <a href="/amigos">Ver +</a>     
                 </div>
             </div>
 
             <div class="card">
                 <figure>
-                    <img src="img/flia.jpg">
+                    <img src="../media/flia.jpg">
                 </figure>
                 <div class="contenido">
                     <h3>Viaja en Familia</h3>
                     <p>Descubriendo el mundo en familia</p>
-                    <a href="redirigir a pantalla dos">Ver +</a>     
+                    <a href="/familia">Ver +</a>     
                 </div>
             </div>
 
             <div class="card">
                 <figure>
-                    <img src="img/solo.jpg">
+                    <img src="../media/solo.jpg">
                 </figure>
                 <div class="contenido">
                     <h3>Viaja Solo</h3>
                     <p>Tu viaje, tus reglas. Explora el mundo a tu ritmo!</p>
-                    <a href="redirigir a pantalla dos">Ver +</a>     
+                    <a href="/solo">Ver +</a>     
                 </div>
             </div>
         </div>
     </div>
-</body>
 
-<!-------------------------- FOOTER ----------------------------->
-    <footer class="pie-de-pagina">
+    <!-------------------------- FOOTER ----------------------------->
+    <footer class="pie-de-pagina footer1">
         <div class="colum">
             <div class="colum1">
                 <figure>
                     <a href="#">
-                        <img src="img/LOGO2.png" alt="img/logo2">
+                        <img src="../media/LOGO2.png" alt="img/logo2">
                     </a>
                 </figure>
             </div>
@@ -129,6 +129,9 @@
             </div>
         </div>    
     </footer>
+</body>
+
+
 
 
 
