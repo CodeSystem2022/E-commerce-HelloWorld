@@ -6,14 +6,11 @@ Este proyecto es un sitio web desarrollado para venta de viajes, que además inc
 ## Funcionalidades Clave
 
 - **Página de Inicio**
-- **Registro de Usuario**
 - **Servicios**
 - **Destinos y Horarios**
-- **Selección de Asientos**
 - **Proceso de Pago**
 - **Quiénes Somos**
 - **Contacto**
-- **Política de Privacidad**
 
 ## Tecnologías Utilizadas
 
